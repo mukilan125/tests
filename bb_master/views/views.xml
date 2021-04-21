@@ -1,0 +1,903 @@
+<odoo>
+	<data>
+
+		<!-- *****************************************************District Views******************************************************************* -->
+		<!-- Form view of district -->
+		<record id="view_district_form" model="ir.ui.view">
+			<field name="name">res.district.form</field>
+			<field name="model">res.district</field>
+			<field name="arch" type="xml">
+				<form string="district">
+					<sheet>
+						<group col="4" colspan="4">
+							<field name="country_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="state_id" options='{"no_create":1,"no_open": 1}' required="1" />
+						</group>
+						<group col="4">
+							<field name="name" />
+							<field name="code" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of district -->
+		<record id="view_district_tree" model="ir.ui.view">
+			<field name="name">res.district.tree</field>
+			<field name="model">res.district</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="code" />
+					<field name="country_id" />
+					<field name="state_id" />
+
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of district -->
+		<record id="view_district_search" model="ir.ui.view">
+			<field name="name">res.district.search</field>
+			<field name="model">res.district</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="code" />
+					<field name="state_id" />
+					<filter name="grp_country" string="Country" domain="[]" context="{'group_by':'country_id'}" />
+					<filter name="grp_state" string="State" domain="[]" context="{'group_by':'state_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of district -->
+		
+		<record id="action_district" model="ir.actions.act_window">
+			<field name="name">District</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">res.district</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- *****************************************************City Views******************************************************************* -->
+
+
+		<!-- Form view of City -->
+		<record id="view_city_form" model="ir.ui.view">
+			<field name="name">view.city.form</field>
+			<field name="model">res.city</field>
+			<field name="arch" type="xml">
+				<form string="City">
+					<sheet>
+						<group col="4" colspan="4">
+							<field name="country_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="state_id" options='{"no_create":1,"no_open": 1}' required="1" />
+							<field name="district_id" options='{"no_create":1,"no_open": 1}' required="1" />
+						</group>
+						<group col="4">
+							<field name="name" />
+							<field name="code" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of City -->
+		<record id="view_city_tree" model="ir.ui.view">
+			<field name="name">view.city.tree</field>
+			<field name="model">res.city</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="code" />
+					<field name="country_id" />
+					<field name="state_id" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of City -->
+		<record id="view_city_search" model="ir.ui.view">
+			<field name="name">res.city.search</field>
+			<field name="model">res.city</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="code" />
+					<filter name="grp_country" string="Country" domain="[]" context="{'group_by':'country_id'}" />
+					<filter name="grp_state" string="State" domain="[]" context="{'group_by':'state_id'}" />
+					<filter name="grp_district" string="District" domain="[]" context="{'group_by':'district_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of City -->
+		
+		<record id="action_city" model="ir.actions.act_window">
+			<field name="name">Cities</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">res.district</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- *****************************************************Campus Views******************************************************************* -->
+
+		<!-- Form view of Campus -->
+		<record id="view_campus_form" model="ir.ui.view">
+			<field name="name">college.campus.form</field>
+			<field name="model">college.campus</field>
+			<field name="arch" type="xml">
+				<form string="Campus">
+					<sheet>
+						<group col="4">
+							<field name="name" />
+							<field name="code" />
+							<field name="estd_date"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Campus -->
+		<record id="view_campus_tree" model="ir.ui.view">
+			<field name="name">college.campus.tree</field>
+			<field name="model">college.campus</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="code" />
+					<field name="estd_date" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of Campus -->
+		<record id="view_campus_search" model="ir.ui.view">
+			<field name="name">college.campus.search</field>
+			<field name="model">college.campus</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="code" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of Campus -->
+		<record id="action_campus" model="ir.actions.act_window">
+			<field name="name">Campus</field>
+			<field name="res_model">college.campus</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- ******************************************Blocks Views************************************************ -->
+
+
+		<!-- Form view of Blocks -->
+		<record id="view_college_block_form" model="ir.ui.view">
+			<field name="name">college.blocks.form</field>
+			<field name="model">college.blocks</field>
+			<field name="arch" type="xml">
+				<form string="Blocks">
+					<sheet>
+						<group col="2" colspan="2">
+							<field name="campus_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+						</group>
+						<group col="4">
+							<field name="name" />
+							<field name="code" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Blocks -->
+		<record id="view_college_block_tree" model="ir.ui.view">
+			<field name="name">college.blocks.tree</field>
+			<field name="model">college.blocks</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="code" />
+					<field name="campus_id" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of Blocks -->
+		<record id="view_college_block_search" model="ir.ui.view">
+			<field name="name">college.blocks.search</field>
+			<field name="model">college.blocks</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="code" />
+					<filter name="grp_campus" string="Campus" domain="[]" context="{'group_by':'campus_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of Blocks -->
+		<record id="action_block" model="ir.actions.act_window">
+			<field name="name">Blocks</field>
+			<field name="res_model">college.blocks</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- *****************************************************Building Views******************************************************************* -->
+
+		<!-- Form view of Building -->
+		<record id="view_building_form" model="ir.ui.view">
+			<field name="name">view.building.form</field>
+			<field name="model">college.building</field>
+			<field name="arch" type="xml">
+				<form string="Buildings">
+					<sheet>
+						<group col="4" colspan="4">
+							<field name="campus_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="block_id" options='{"no_create":1,"no_open": 1}' required="1" />
+						</group>
+						<group col="4" colspan="4">
+							<field name="name" />
+							<field name="code" />
+							<field name="total_cost" />
+							<field name="currency_id" />
+							<field name="area" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Building -->
+		<record id="view_building_tree" model="ir.ui.view">
+			<field name="name">view.building.tree</field>
+			<field name="model">college.building</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="code" />
+					<field name="campus_id" />
+					<field name="block_id" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of Building -->
+		<record id="view_building_search" model="ir.ui.view">
+			<field name="name">view.building.search</field>
+			<field name="model">college.building</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="code" />
+					<filter name="grp_campus" string="Campus" domain="[]" context="{'group_by':'campus_id'}" />
+					<filter name="grp_block" string="Block" domain="[]" context="{'group_by':'block_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of Building -->
+		<record id="action_building" model="ir.actions.act_window">
+			<field name="name">Buildings</field>
+			<field name="res_model">college.building</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- ******************************************Room Layout Views************************************************ -->
+
+
+		<!-- Form view of Room Layout -->
+		<record id="view_college_room_layout_form" model="ir.ui.view">
+			<field name="name">room.layout.form</field>
+			<field name="model">room.layout</field>
+			<field name="arch" type="xml">
+				<form string="Blocks">
+					<sheet>
+						<group col="2" colspan="2">
+							<field name="institution_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+						</group>
+						<group col="4">
+							<field name="name" />
+							<field name="code" />
+							<field name="row_count" />
+							<field name="column_count" />
+							<field name="seat_per_col" />
+							<field name="total_seats" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Room Layout -->
+		<record id="view_college_room_layout_tree" model="ir.ui.view">
+			<field name="name">room.layout.tree</field>
+			<field name="model">room.layout</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="code" />
+					<field name="total_seats" />
+					<field name="institution_id" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of Room Layout -->
+		<record id="view_college_room_layout_search" model="ir.ui.view">
+			<field name="name">room.layout.search</field>
+			<field name="model">room.layout</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="code" />
+					<filter name="grp_institute" string="Institution" domain="[]" context="{'group_by':'institution_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of Room Layout -->
+		<record id="action_room_layout" model="ir.actions.act_window">
+			<field name="name">Room Layout</field>
+			<field name="res_model">room.layout</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- ******************************************Room Detail Views************************************************ -->
+
+
+		<!-- Form view of Room Detail -->
+		<record id="view_room_detail_form" model="ir.ui.view">
+			<field name="name">room.detail.form</field>
+			<field name="model">room.detail</field>
+			<field name="arch" type="xml">
+				<form string="Room Detail">
+					<sheet>
+						<group col="4" colspan="4">
+							<field name="name"/>
+							<field name="code"/>
+							<field name="floor"/>
+							<field name="building_id" options='{"no_create":1,"no_open": 1}'/>
+						</group>
+						<group>
+							<field name='is_seminar'/>
+						</group>
+						<group colspan='4'>
+							<field name='room_condition'/>
+						</group>
+						<notebook>
+							<page string="Occupancies" id='layout_lines'>
+								<field name = 'room_layout_ids'>
+									<tree create="1" delete="1" edit="1" editable="top">
+										<field name='layout_id'/>
+										<field name='room_type_id'/>
+										<field name='no_of_occupancy'/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Room Detail -->
+		<record id="view_room_detail_tree" model="ir.ui.view">
+			<field name="name">room.detail.tree</field>
+			<field name="model">room.detail</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="code" />
+					<field name="floor" />
+					<field name="building_id"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of Room Detail -->
+		<record id="view_room_detail_search" model="ir.ui.view">
+			<field name="name">room.detail.search</field>
+			<field name="model">room.detail</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="code" />
+					<filter name="building_id" string="Building" domain="[]" context="{'group_by':'building_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of Room Detail -->
+		<record id="action_room_detail" model="ir.actions.act_window">
+			<field name="name">Room Detail</field>
+			<field name="res_model">room.detail</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- ******************************************Room Type Views************************************************ -->
+
+
+		<!-- Form view of Room type -->
+		<record id="view_room_type_form" model="ir.ui.view">
+			<field name="name">room.type.form</field>
+			<field name="model">room.type</field>
+			<field name="arch" type="xml">
+				<form string="Room Type">
+					<sheet>
+						<group colspan="4">
+							<field name="name"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Room type -->
+		<record id="view_room_type_tree" model="ir.ui.view">
+			<field name="name">room.type.tree</field>
+			<field name="model">room.type</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- Action of Room Detail -->
+		<record id="action_room_type" model="ir.actions.act_window">
+			<field name="name">Room Type</field>
+			<field name="res_model">room.type</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- ******************************************Academic Year Views************************************************ -->
+
+
+		<!-- Form view of Academic Year Detail -->
+		<record id="view_academic_year_form" model="ir.ui.view">
+			<field name="name">academic.year.form</field>
+			<field name="model">academic.year</field>
+			<field name="arch" type="xml">
+				<form string="Academic Year Detail">
+					<sheet>
+						<group col="2" colspan="2">
+							<field name="institution_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+						</group>
+						<group col="4" colspan="4">
+							<field name="start_date"/>
+							<field name="end_date"/>
+							<field name="code"/>
+						</group>
+						<group>
+							<field name='description'/>
+						</group>
+						<notebook>
+							<page string="Semester" id='semester_lines'>
+								<field name = 'semester_ids'>
+									<tree create="1" delete="1" edit="1" editable="bottom">
+										<field name='semester_no'/>
+										<field name='start_date'/>
+										<field name='end_date'/>
+										<field name='academic_term' required='True'/>
+										<field name='code'/>
+										<field name='name'/>
+										<field name='result_date'/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Academic Year Detail -->
+		<record id="view_academic_year_tree" model="ir.ui.view">
+			<field name="name">academic.year.tree</field>
+			<field name="model">academic.year</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="code" />
+					<field name="start_date" />
+					<field name="end_date" />
+					<field name="institution_id"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of Academic Year Detail -->
+		<record id="view_academic_year_search" model="ir.ui.view">
+			<field name="name">academic.year.search</field>
+			<field name="model">academic.year</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="start_date" />
+					<field name="end_date" />
+					<filter name="institution_id" string="Institution" domain="[]" context="{'group_by':'institution_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of Academic Year Detail -->
+		<record id="action_academic_year" model="ir.actions.act_window">
+			<field name="name">Academic Year</field>
+			<field name="res_model">academic.year</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- ******************************************Course Type Views************************************************ -->
+
+
+		<!-- Form view of Course type -->
+		<record id="view_course_type_form" model="ir.ui.view">
+			<field name="name">academic.course.type.form</field>
+			<field name="model">academic.course.type</field>
+			<field name="arch" type="xml">
+				<form string="Course Type">
+					<sheet>
+						<group col="4" colspan="4">
+							<field name="code" placeholder="BA..." required="1"/>
+							<field name="description" placeholder="Bachelor or Arts..."/>
+							<field name="category" />
+							<field name="degree_type"/>
+							<field name="duration"/>
+							<field name="unit_id"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Course type -->
+		<record id="view_course_type_tree" model="ir.ui.view">
+			<field name="name">academic.course.type.tree</field>
+			<field name="model">academic.course.type</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="code" />
+					<field name="description" />
+					<field name="category" />
+					<field name="degree_type" />
+					<field name="duration"/>
+					<field name="unit_id"/>
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- Action of Course Detail -->
+		<record id="action_course_type" model="ir.actions.act_window">
+			<field name="name">Course Type</field>
+			<field name="res_model">academic.course.type</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- ******************************************Academic Course Views************************************************ -->
+
+
+		<!-- Form view of Academic Course -->
+		<record id="view_academic_course_form" model="ir.ui.view">
+			<field name="name">academic.course.form</field>
+			<field name="model">academic.course</field>
+			<field name="arch" type="xml">
+				<form string="Course Type">
+					<sheet>
+						<group col="4" colspan="4">
+							<field name="institution_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="course_type_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+						</group>
+						<group col="4" colspan="4" id="course_name_code">
+							<field name="name" placeholder="B.Sc (Physics)..." required="1"/>
+							<field name="code" placeholder="BPH..." required="1"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Academic Course -->
+		<record id="view_academic_course__tree" model="ir.ui.view">
+			<field name="name">academic.course.tree</field>
+			<field name="model">academic.course</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="institution_id"/>
+					<field name="course_type_id" />
+					<field name="name" />
+					<field name="code" />
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- Action of Academic Course Detail -->
+		<record id="action_academic_course" model="ir.actions.act_window">
+			<field name="name">Academic Course</field>
+			<field name="res_model">academic.course</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- ******************************************Classes Views************************************************ -->
+
+
+		<!-- Form view of Classes -->
+		<record id="view_classes_form" model="ir.ui.view">
+			<field name="name">academic.classes.form</field>
+			<field name="model">academic.classes</field>
+			<field name="arch" type="xml">
+				<form string="Classes">
+					<sheet>
+						<group>
+							<field name="institution_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+						</group>
+						<group col="4" colspan="4" id='classes_sheet'>
+							<field name="code" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="name" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="staff_dept" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="staff_name" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="class_rep"/>
+							<field name="rep_type"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Classes -->
+		<record id="view_academic_classes__tree" model="ir.ui.view">
+			<field name="name">academic.classes.tree</field>
+			<field name="model">academic.classes</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="institution_id" />
+					<field name="code" />
+					<field name="name" />
+					<field name="staff_name"/>
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- Action of Classes Detail -->
+		<record id="action_classes" model="ir.actions.act_window">
+			<field name="name">Classes</field>
+			<field name="res_model">academic.classes</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- ******************************************Batch Views************************************************ -->
+
+
+		<!-- Form view of Batch -->
+		<record id="view_academic_batch_form" model="ir.ui.view">
+			<field name="name">academic.batch.form</field>
+			<field name="model">academic.batch</field>
+			<field name="arch" type="xml">
+				<form string="Batch">
+					<sheet>
+						<group col="2" colspan="2">
+							<field name="institution_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="course_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+						</group>
+						<group col="4" colspan="4">
+							<field name="from_academic_year_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="to_academic_year_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="name" required="1"/>
+							<field name="regulation_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+							<field name="interview"/>
+							<field name="is_active"/>
+							<field name="total_seat" />
+							<field name="filled_seat" />
+							<field name="govn_seat" />
+							<field name="mngt_seat" />
+							<field name="govn_regular" />
+							<field name="mngt_regular" />
+							<field name="govn_lateral" />
+							<field name="mngt_lateral" />
+						</group>
+						<group col="4" colspan="4">
+							<field name="entrance_date" />
+							<field name="commencement_date" />
+							<field name="completion_date" />
+						</group>
+						<group col="4" colspan="4">
+							<field name="app_start_date" />
+							<field name="app_end_date" />
+							<field name="online_app_end_date" />
+						</group>
+						<group col="4" colspan="4" id='final'>
+							<field name="roll_no_prefix"/>
+							<field name="suffix_length"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Batch -->
+		<record id="view_academic_batch__tree" model="ir.ui.view">
+			<field name="name">academic.batch.tree</field>
+			<field name="model">academic.batch</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="course_id" />
+					<field name="from_academic_year_id" />
+					<field name="to_academic_year_id" />
+					<field name="total_seat" />
+					<field name="filled_seat" />
+					<field name="institution_id"/>
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- Action of Batch Detail -->
+		<record id="action_academic_batch" model="ir.actions.act_window">
+			<field name="name">Batch</field>
+			<field name="res_model">academic.batch</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<!-- ******************************************Academic Regulation Views************************************************ -->
+
+
+		<record id="view_academic_regulation_form" model="ir.ui.view">
+			<field name="name">academic.regulation.form</field>
+			<field name="model">academic.regulation</field>
+			<field name="arch" type="xml">
+				<form string="Academic Regulation Detail">
+					<sheet>
+						<group col="2" colspan="2">
+							<field name="institution_id" options='{"no_create":1,"no_open": 1}' required="1"/>
+						</group>
+						<group col="4" colspan="4">
+							<field name="code"/>
+							<field name="desc"/>
+							<field name="from_date"/>
+							<field name="till_date"/>
+						</group>
+						<group>
+							<field name='autonomous'/>
+							<field name='follow_grade_sys'/>
+							<field name='current_regulation'/>
+						</group>
+						<notebook>
+							<page string="Year" id='degree_program_lines'>
+								<field name = 'program_ids'>
+									<tree create="1" delete="1" edit="1" editable="bottom">
+										<field name='program_id'/>
+										<field name='academic_term'/>
+										<field name='year_code'/>
+										<field name='semester_count'/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Tree view of Academic Regulation Detail -->
+		<record id="view_academic_regulation_tree" model="ir.ui.view">
+			<field name="name">academic.regulation.tree</field>
+			<field name="model">academic.regulation</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="code" />
+					<field name="from_date" />
+					<field name="till_date" />
+					<field name="institution_id"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- Search view of Academic Regulation Detail -->
+		<record id="view_academic_regulation_search" model="ir.ui.view">
+			<field name="name">academic.regulation.search</field>
+			<field name="model">academic.regulation</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name='code'/>
+					<field name="from_date" />
+					<field name="till_date" />
+					<filter name="institution_id" string="Institution" domain="[]" context="{'group_by':'institution_id'}" />
+				</search>
+			</field>
+		</record>
+
+		<!-- Action of Academic Regulation Detail -->
+		<record id="action_academic_regulation" model="ir.actions.act_window">
+			<field name="name">Academic Regulation</field>
+			<field name="res_model">academic.regulation</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+
+
+		<!-- *********************************Top menu item***************************************** -->
+		
+		<menuitem name="Master" id="menu_root" web_icon="bb_master,static/description/icon.png"/>
+
+		<menuitem name="Academic" id="master_menu_academic" parent="bb_master.menu_root" sequence="1"/>
+		
+		<menuitem name="Academic Year" id="menu_academic_year" action="action_academic_year" parent="master_menu_academic" sequence="1"/>
+		<!-- <menuitem name="Academic Semesters" id="menu_semesters" action="action_academic_semesters" parent="master_menu_academic" sequence="2"/> -->
+		<menuitem name="Course Type" id="menu_academic_course_type" action="action_course_type" parent="master_menu_academic" sequence="3"/>
+		<menuitem name="Academic Course" id="menu_academic_course" action="action_academic_course" parent="master_menu_academic" sequence="4"/>
+		<menuitem name="Classes" id="menu_classes" action="action_classes" parent="master_menu_academic" sequence="5"/>
+		<menuitem name="Batch" id="menu_academic_batch" action="action_academic_batch" parent="master_menu_academic" sequence="6"/>
+		<menuitem name="Regulation" id="menu_academic_Regulation" action="action_academic_regulation" parent="master_menu_academic" sequence="7"/>
+
+		<menuitem name="Room Hierarchy" id="master_room_hierarchy" parent="menu_root" sequence="2"/>
+
+		<menuitem name="Campus" id="master_campus" action="action_campus" parent="master_room_hierarchy" sequence="1"/>
+		<menuitem name="Blocks" id="master_blocks" action="action_block" parent="master_room_hierarchy" sequence="2"/>
+		<menuitem name="Buildings" id="master_building" action="action_building" parent="master_room_hierarchy" sequence="3"/>
+		<menuitem name="Room Layout" id="master_room_layout_menu" action="action_room_layout" parent="master_room_hierarchy" sequence="4"/>
+		<menuitem name="Room Type" id="master_room_type_menu" action="action_room_type" parent="master_room_hierarchy" sequence="5"/>
+		<menuitem name="Room Detail" id="master_room_detail_menu" action="action_room_detail" parent="master_room_hierarchy" sequence="6"/>
+
+
+		<menuitem name="Localization" id="master_location" parent="menu_root" sequence="3"/>
+
+		<menuitem name="Countries" id="master_country" action="base.action_country" parent="master_location" sequence="1"/>
+		<menuitem name="States" id="master_state" action="base.action_country_state" parent="master_location" sequence="2"/>
+		<menuitem name="District" id="master_district" action="action_district" parent="master_location" sequence="3"/>
+		<menuitem name="Cities" id="master_city" action="action_city" parent="master_location" sequence="4"/>
+
+
+		<menuitem name="Others" id="route_master" parent="menu_root" sequence="11"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</data>
+</odoo>

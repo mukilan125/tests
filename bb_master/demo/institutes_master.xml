@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+         
+        <record id="rcas" model="college.campus">
+            <field name="name">RATHINAM COLLEGE OF ARTS AND SCIENCE</field>            
+            <field name="code">RCAS</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="RIM" model="college.campus">
+            <field name="name">RATHINAM INSTITUTE OF MANAGEMENT</field>            
+            <field name="code">RIM</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="RTC" model="college.campus">
+            <field name="name">RATHINAM  TECHNICAL CAMPUS</field>            
+            <field name="code">RTC</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="RSA" model="college.campus">
+            <field name="name">RATHINAM SCHOOL OF ARCHITECHTURE</field>            
+            <field name="code">RSA</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="RIPS" model="college.campus">
+            <field name="name">RATHINAM INTERNATIONAL PUBLIC SCHOOL</field>            
+            <field name="code">RIPS</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="RCC" model="college.campus">
+            <field name="name">RATHINAM COMMUNITY COLLEGE</field>            
+            <field name="code">RCC</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="rathinavani" model="college.campus">
+            <field name="name">RATHINAVANI FM</field>            
+            <field name="code">FM</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="spanventure" model="college.campus">
+            <field name="name">SPAN VENTURE</field>            
+            <field name="code">SPAN</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+        <record id="maintenance" model="college.campus">
+            <field name="name">RATHINAM MAINTENANCE PROVIDER</field>             
+            <field name="code">RMP</field>
+            <field name="estd_date">9999-01-01</field>           
+        </record>
+
+        <record id="rcascompany" model="res.company">
+            <field name="name">Rathinam College of Arts And Science</field>            
+        </record>
+        <record id="rimcompany" model="res.company">
+            <field name="name">Rathinam Institute of Management</field>            
+        </record>
+        <record id="rtccompany" model="res.company">
+            <field name="name">Rathinam Technical Campus</field>            
+        </record>
+        <record id="rsacompany" model="res.company">
+            <field name="name">Rathinam School of Architecture</field>            
+        </record>
+        <record id="ripscompany" model="res.company">
+            <field name="name">Rathinam International Public School</field>            
+        </record>
+        <record id="rcccompany" model="res.company">
+            <field name="name">Rathinam Community College</field>            
+        </record>
+        <record id="fmcompany" model="res.company">
+            <field name="name">Rathinavani FM</field>            
+        </record>
+        <record id="spancompany" model="res.company">
+            <field name="name">Span Venture</field>            
+        </record>
+        <record id="maintcompany" model="res.company">
+            <field name="name">Rathinam Maintenance Provider</field>            
+        </record>
+
+    </data>
+</odoo>

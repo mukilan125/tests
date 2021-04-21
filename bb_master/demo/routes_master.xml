@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+         <record id="ALANDURAI" model="transport.routes">
+            <field name="route_name">Alandurai</field>            
+            <field name="route_code">ALANDURAI</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="ANAIMALAI" model="transport.routes">
+            <field name="route_name">Anaimalai</field>            
+            <field name="route_code">ANAIMALAI</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="KK" model="transport.routes">
+            <field name="route_name">Kinathukadavu</field>            
+            <field name="route_code">KINATHUKADAVU</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="KOLLEKODU" model="transport.routes">
+            <field name="route_name">Kollekodu</field>            
+            <field name="route_code">KOLLEKODU</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="PALAKKAD" model="transport.routes">
+            <field name="route_name">Palakkad</field>            
+            <field name="route_code">PALAKKAD</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="PEELAMEDU" model="transport.routes">
+            <field name="route_name">Peelamedu</field>            
+            <field name="route_code">PEELAMEDU</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="SARAVANAMPATTI" model="transport.routes">
+            <field name="route_name">Saravanampatti</field>            
+            <field name="route_code">SARAVANAMPATTI</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+         <record id="SELVAPURAM" model="transport.routes">
+            <field name="route_name">Selvapuram</field>            
+            <field name="route_code">SELVAPURAM</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+         <record id="TIRUPUR" model="transport.routes">
+            <field name="route_name">Tirupur</field>            
+            <field name="route_code">TIRUPUR</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="TIRUPURII" model="transport.routes">
+            <field name="route_name">Tirupur - II</field>            
+            <field name="route_code">TIRUPURII</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="UDUMALAI" model="transport.routes">
+            <field name="route_name">Udumalai</field>            
+            <field name="route_code">UDUMALAI</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="UKKADAM" model="transport.routes">
+            <field name="route_name">Ukkadam</field>            
+            <field name="route_code">UKKADAM</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>   
+        <record id="UKKByPASS" model="transport.routes">
+            <field name="route_name">Ukkadam Bypass</field>            
+            <field name="route_code">UKKADAMBYPASS</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+        <record id="VADAVALLI" model="transport.routes">
+            <field name="route_name">Vadavalli</field>            
+            <field name="route_code">VADAVALLI</field>
+            <field name="start_time"></field>
+            <field name="end_time"></field>                      
+        </record>
+
+    </data>
+</odoo>

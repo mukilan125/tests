@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+    	<record id='CLS1' model='academic.classes'>
+    		<field name='institution_id'>8</field>
+    		<field name='name'>DCE</field>
+    		<field name='code'>DCE</field>	
+    	</record>
+    	<record id='CLS2' model='academic.classes'>
+    		<field name='institution_id'>4</field>
+    		<field name='name'>MBA I</field>
+    		<field name='code'>MBA I</field>	
+    	</record>
+    	<record id='CLS3' model='academic.classes'>
+    		<field name='institution_id'>4</field>
+    		<field name='name'>MBA II</field>
+            <field name='code'>MBA II</field>	
+    	</record>
+    	<record id='CLS4' model='academic.classes'>
+    		<field name='institution_id'>6</field>
+    		<field name='name'>I B.Arch</field>
+            <field name='code'>I B.Arch</field>	
+    	</record>
+    	<record id='CLS5' model='academic.classes'>
+    		<field name='institution_id'>6</field>
+    		<field name='name'>II B.Arch</field>
+            <field name='code'>II B.Arch</field>	
+    	</record>
+    	<record id='CLS6' model='academic.classes'>
+    		<field name='institution_id'>6</field>
+    		<field name='name'>III B.Arch</field>
+            <field name='code'>III B.Arch</field>	
+    	</record>
+    	<record id='CLS7' model='academic.classes'>
+    		<field name='institution_id'>6</field>
+    		<field name='name'>IV B.Arch</field>
+            <field name='code'>IV B.Arch</field>	
+    	</record>
+    	<record id='CLS8' model='academic.classes'>
+    		<field name='institution_id'>6</field>
+    		<field name='name'>V B.Arch</field>
+            <field name='code'>V B.Arch</field>	
+    	</record>	
+    </data>
+</odoo>

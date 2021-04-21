@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="BE" model="academic.course.type">
+            <field name="code">BE</field>
+            <field name="description">Bachelor of Engineering</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">4</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="ME" model="academic.course.type">
+            <field name="code">ME</field>
+            <field name="description">Master of Engineering</field>
+            <field name="category">pg</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="BTech" model="academic.course.type">
+            <field name="code">BTech</field>
+            <field name="description">Bachelor of Technology</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">4</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="BA" model="academic.course.type">
+            <field name="code">BA</field>
+            <field name="description">Bachelor of Arts</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">3</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="MA" model="academic.course.type">
+            <field name="code">MA</field>
+            <field name="description">Master of Arts</field>
+            <field name="category">pg</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="BSC" model="academic.course.type">
+            <field name="code">BSc</field>
+            <field name="description">Bachelor of Sciences</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">3</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="MSC" model="academic.course.type">
+            <field name="code">MSc</field>
+            <field name="description">Master of Sciences</field>
+            <field name="category">pg</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="BCom" model="academic.course.type">
+            <field name="code">BCom</field>
+            <field name="description">Bachelor of Commerce</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">3</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="MCom" model="academic.course.type">
+            <field name="code">MCom</field>
+            <field name="description">Master of Commerce</field>
+            <field name="category">pg</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="BBA" model="academic.course.type">
+            <field name="code">BBA</field>
+            <field name="description">Bachelor of Business Administration</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">3</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="MBA" model="academic.course.type">
+            <field name="code">MBA</field>
+            <field name="description">Master of Business Administration</field>
+            <field name="category">pg</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="BCA" model="academic.course.type">
+            <field name="code">BCA</field>
+            <field name="description">Bachelor of Computer Applications</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">3</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="MCA" model="academic.course.type">
+            <field name="code">MCA</field>
+            <field name="description">Master of Computer Applications</field>
+            <field name="category">pg</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="MphilFT" model="academic.course.type">
+            <field name="code">MPhil-FT</field>
+            <field name="description">Master of Philosopy</field>
+            <field name="category">pg</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">1</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="MphilPT" model="academic.course.type">
+            <field name="code">MPhil-PT</field>
+            <field name="description">Master of Philosopy</field>
+            <field name="category">pg</field>
+            <field name="degree_type">part</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="PhDFT" model="academic.course.type">
+            <field name="code">PhD-FT</field>
+            <field name="description">Doctorate - Full Time</field>
+            <field name="category">research</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">2</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="PhDPT" model="academic.course.type">
+            <field name="code">PhD-PT</field>
+            <field name="description">Doctorate - Part Time</field>
+            <field name="category">research</field>
+            <field name="degree_type">part</field>           
+            <field name="duration">3</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="BArch" model="academic.course.type">
+            <field name="code">BArch</field>
+            <field name="description">Bachelor of Architecture</field>
+            <field name="category">ug</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">5</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        <record id="Diploma" model="academic.course.type">
+            <field name="code">Diploma_1_Year</field>
+            <field name="description">Diploma Courses</field>
+            <field name="category">certification</field>
+            <field name="degree_type">full</field>           
+            <field name="duration">1</field>           
+            <field name="unit_id">years</field>           
+        </record>
+        
+    </data>
+</odoo>

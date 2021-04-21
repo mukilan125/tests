@@ -1,0 +1,141 @@
+id,code,name,institution_id/id
+bb_master.CLS9,I B.Com (A & F),I B.Com (A & F),bb_master.rcascompany
+bb_master.CLS10,I B.COM (B & I),I B.COM (B & I),bb_master.rcascompany
+bb_master.CLS11,I B.Com (CA) – ‘A’,I B.Com (CA) – ‘A’,bb_master.rcascompany
+bb_master.CLS12,I B.Com (CA) – ‘B’,I B.Com (CA) – ‘B’,bb_master.rcascompany
+bb_master.CLS13,I B.Com (CS),I B.Com (CS),bb_master.rcascompany
+bb_master.CLS14,I B.Com (E - com),I B.Com (E - com),bb_master.rcascompany
+bb_master.CLS15,I B.COM (FS),I B.COM (FS),bb_master.rcascompany
+bb_master.CLS16,I B.Com (IT),I B.Com (IT),bb_master.rcascompany
+bb_master.CLS17,I B.Com -'A',I B.Com -'A',bb_master.rcascompany
+bb_master.CLS18,I B.Com -'B',I B.Com -'B',bb_master.rcascompany
+bb_master.CLS19,I B.Com BPS,I B.Com BPS,bb_master.rcascompany
+bb_master.CLS20,I B.Com PA - A,I B.Com PA - A,bb_master.rcascompany
+bb_master.CLS21,I B.Com PA - B,I B.Com PA - B,bb_master.rcascompany
+bb_master.CLS22,I B.Sc CDF,I B.Sc CDF,bb_master.rcascompany
+bb_master.CLS23,I B.SC CS -'A',I B.SC CS -'A',bb_master.rcascompany
+bb_master.CLS24,I B.SC CS -'B',I B.SC CS -'B',bb_master.rcascompany
+bb_master.CLS25,I B.Sc CT,I B.Sc CT,bb_master.rcascompany
+bb_master.CLS26,I B.Sc(Psycology),I B.Sc(Psycology),bb_master.rcascompany
+bb_master.CLS27,I B.Sc(VIS),I B.Sc(VIS),bb_master.rcascompany
+bb_master.CLS28,I BA ENG,I BA ENG,bb_master.rcascompany
+bb_master.CLS29,I BBA,I BBA,bb_master.rcascompany
+bb_master.CLS30,I BCA,I BCA,bb_master.rcascompany
+bb_master.CLS31,I BSC (Bio tech),I BSC (Bio tech),bb_master.rcascompany
+bb_master.CLS32,I BSC (Bio),I BSC (Bio),bb_master.rcascompany
+bb_master.CLS33,I BSC (Micro),I BSC (Micro),bb_master.rcascompany
+bb_master.CLS34,I BSC IT,I BSC IT,bb_master.rcascompany
+bb_master.CLS35,I BSC MAT,I BSC MAT,bb_master.rcascompany
+bb_master.CLS36,I BSC PHY,I BSC PHY,bb_master.rcascompany
+bb_master.CLS37,I M.Com,I M.Com,bb_master.rcascompany
+bb_master.CLS38,I M.Com (CA),I M.Com (CA),bb_master.rcascompany
+bb_master.CLS39,I M.Sc CS,I M.Sc CS,bb_master.rcascompany
+bb_master.CLS40,I M.Sc(DSBA),I M.Sc(DSBA),bb_master.rcascompany
+bb_master.CLS41,I M.Sc(Maths),I M.Sc(Maths),bb_master.rcascompany
+bb_master.CLS42,I MJMC,I MJMC,bb_master.rcascompany
+bb_master.CLS43,I MS IT,I MS IT,bb_master.rcascompany
+bb_master.CLS44,I MSC (MATHS),I MSC (MATHS),bb_master.rcascompany
+bb_master.CLS45,II B.Com,II B.Com,bb_master.rcascompany
+bb_master.CLS46,II B.Com (CA) – ‘A’,II B.Com (CA) – ‘A’,bb_master.rcascompany
+bb_master.CLS47,II B.Com (CA) – ‘B’,II B.Com (CA) – ‘B’,bb_master.rcascompany
+bb_master.CLS48,II B.Com -'A',II B.Com -'A',bb_master.rcascompany
+bb_master.CLS49,II B.Com -'B',II B.Com -'B',bb_master.rcascompany
+bb_master.CLS50,II B.Com BPS,II B.Com BPS,bb_master.rcascompany
+bb_master.CLS51,II B.Com PA,II B.Com PA,bb_master.rcascompany
+bb_master.CLS52,II B.Sc CDF,II B.Sc CDF,bb_master.rcascompany
+bb_master.CLS53,II B.Sc CT,II B.Sc CT,bb_master.rcascompany
+bb_master.CLS54,II B.Sc(Psycology),II B.Sc(Psycology),bb_master.rcascompany
+bb_master.CLS55,II B.Sc(VIS),II B.Sc(VIS),bb_master.rcascompany
+bb_master.CLS56,II BA ENG,II BA ENG,bb_master.rcascompany
+bb_master.CLS57,II BBA,II BBA,bb_master.rcascompany
+bb_master.CLS58,II BCA,II BCA,bb_master.rcascompany
+bb_master.CLS59,II BSC CS,II BSC CS,bb_master.rcascompany
+bb_master.CLS60,II BSC CS - 'A',II BSC CS - 'A',bb_master.rcascompany
+bb_master.CLS61,II BSC CS - 'B',II BSC CS - 'B',bb_master.rcascompany
+bb_master.CLS62,II BSC IT,II BSC IT,bb_master.rcascompany
+bb_master.CLS63,II BSC MAT,II BSC MAT,bb_master.rcascompany
+bb_master.CLS64,II BSC PHY,II BSC PHY,bb_master.rcascompany
+bb_master.CLS65,II M.Com,II M.Com,bb_master.rcascompany
+bb_master.CLS66,II M.Sc CS,II M.Sc CS,bb_master.rcascompany
+bb_master.CLS67,II M.Sc(Maths),II M.Sc(Maths),bb_master.rcascompany
+bb_master.CLS68,II MJMC,II MJMC,bb_master.rcascompany
+bb_master.CLS69,II MS IT,II MS IT,bb_master.rcascompany
+bb_master.CLS70,III B.Com,III B.Com,bb_master.rcascompany
+bb_master.CLS71,III B.com - 'B',III B.com - 'B',bb_master.rcascompany
+bb_master.CLS72,III B.Com (CA) – ‘A’,III B.Com (CA) – ‘A’,bb_master.rcascompany
+bb_master.CLS73,III B.Com (CA) – ‘B’,III B.Com (CA) – ‘B’,bb_master.rcascompany
+bb_master.CLS74,III B.Com -'A',III B.Com -'A',bb_master.rcascompany
+bb_master.CLS75,III B.Com BPS,III B.Com BPS,bb_master.rcascompany
+bb_master.CLS76,III B.Com PA,III B.Com PA,bb_master.rcascompany
+bb_master.CLS77,III B.sc (Psychology,III B.sc (Psychology,bb_master.rcascompany
+bb_master.CLS78,III B.Sc CDF,III B.Sc CDF,bb_master.rcascompany
+bb_master.CLS79,III B.Sc CT,III B.Sc CT,bb_master.rcascompany
+bb_master.CLS80,III B.Sc(VIS),III B.Sc(VIS),bb_master.rcascompany
+bb_master.CLS81,III BA ENG,III BA ENG,bb_master.rcascompany
+bb_master.CLS82,III BBA,III BBA,bb_master.rcascompany
+bb_master.CLS83,III BCA,III BCA,bb_master.rcascompany
+bb_master.CLS84,III BSC CS - 'A',III BSC CS - 'A',bb_master.rcascompany
+bb_master.CLS85,III BSC CS - 'B',III BSC CS - B',bb_master.rcascompany
+bb_master.CLS86,III BSC IT,III BSC IT,bb_master.rcascompany
+bb_master.CLS87,III BSC MAT,III BSC MAT,bb_master.rcascompany
+bb_master.CLS88,III BSC PHY,III BSC PHY,bb_master.rcascompany
+bb_master.CLS89,II-M.Com,II-M.Com,bb_master.rcascompany
+bb_master.CLS90,I-M.Com,I-M.Com,bb_master.rcascompany
+bb_master.CLS91,M.Phil (Full time),M.Phil (Full time),bb_master.rcascompany
+bb_master.CLS92,M.Phil (Part time),M.Phil (Part time),bb_master.rcascompany
+bb_master.CLS93,Ph.D(Full time),Ph.D(Full time),bb_master.rcascompany
+bb_master.CLS94,Ph.D(Part time),Ph.D(Part time),bb_master.rcascompany
+bb_master.CLS95,V BA ENG,V BA ENG,bb_master.rcascompany
+bb_master.CLS96,I AE,I AE,bb_master.rtccompany
+bb_master.CLS97,I BCS,I BCS,bb_master.rtccompany
+bb_master.CLS98,I CIVIL,I CIVIL,bb_master.rtccompany
+bb_master.CLS99,I CLASS-A,I CLASS-A,bb_master.rtccompany
+bb_master.CLS100,I CLASS-B,I CLASS-B,bb_master.rtccompany
+bb_master.CLS101,I CLASS-C,I CLASS-C,bb_master.rtccompany
+bb_master.CLS102,I CLASS-D,I CLASS-D,bb_master.rtccompany
+bb_master.CLS103,I CLASS-E,I CLASS-E,bb_master.rtccompany
+bb_master.CLS104,I CLASS-F,I CLASS-F,bb_master.rtccompany
+bb_master.CLS105,I CSE,I CSE,bb_master.rtccompany
+bb_master.CLS106,I CSE & CIVIL,I CSE & CIVIL,bb_master.rtccompany
+bb_master.CLS107,I ECE,I ECE,bb_master.rtccompany
+bb_master.CLS108,I ECE-A,I ECE-A,bb_master.rtccompany
+bb_master.CLS109,I ECE-B,I ECE-B,bb_master.rtccompany
+bb_master.CLS110,I IT,I IT,bb_master.rtccompany
+bb_master.CLS111,I MECH,I MECH,bb_master.rtccompany
+bb_master.CLS112,I MECH A,I MECH A,bb_master.rtccompany
+bb_master.CLS113,I MECH B,I MECH B,bb_master.rtccompany
+bb_master.CLS114,I MECH B & CIVIL,I MECH B & CIVIL,bb_master.rtccompany
+bb_master.CLS115,II AE,II AE,bb_master.rtccompany
+bb_master.CLS116,II BCS,II BCS,bb_master.rtccompany
+bb_master.CLS117,II CIVIL,II CIVIL,bb_master.rtccompany
+bb_master.CLS118,II CSE,II CSE,bb_master.rtccompany
+bb_master.CLS119,S1,II CSE A1,bb_master.rtccompany
+bb_master.CLS120,II ECE,II ECE,bb_master.rtccompany
+bb_master.CLS121,II ECE A,II ECE A,bb_master.rtccompany
+bb_master.CLS122,II ECE B,II ECE B,bb_master.rtccompany
+bb_master.CLS123,II IT,II IT,bb_master.rtccompany
+bb_master.CLS124,II MECH,II MECH,bb_master.rtccompany
+bb_master.CLS125,II MECH A,II MECH A,bb_master.rtccompany
+bb_master.CLS126,II MECH B,II MECH B,bb_master.rtccompany
+bb_master.CLS127,III CIVIL,III CIVIL,bb_master.rtccompany
+bb_master.CLS128,III CSE,III CSE,bb_master.rtccompany
+bb_master.CLS129,III ECE,III ECE,bb_master.rtccompany
+bb_master.CLS130,III ECE A,III ECE A,bb_master.rtccompany
+bb_master.CLS131,III ECE B,III ECE B,bb_master.rtccompany
+bb_master.CLS132,III IT,III IT,bb_master.rtccompany
+bb_master.CLS133,III MECH,III MECH,bb_master.rtccompany
+bb_master.CLS134,III MECH - A,III MECH - A,bb_master.rtccompany
+bb_master.CLS135,III MECH - B,III MECH - B,bb_master.rtccompany
+bb_master.CLS136,III MECH A,III MECH A,bb_master.rtccompany
+bb_master.CLS137,III MECH B,III MECH B,bb_master.rtccompany
+bb_master.CLS138,IV CIVIL,IV CIVIL,bb_master.rtccompany
+bb_master.CLS139,IV CSE,IV CSE,bb_master.rtccompany
+bb_master.CLS140,IV ECE,IV ECE,bb_master.rtccompany
+bb_master.CLS141,IV ECE A,IV ECE A,bb_master.rtccompany
+bb_master.CLS142,IV ECE B,IV ECE B,bb_master.rtccompany
+bb_master.CLS143,IV IT,IV IT,bb_master.rtccompany
+bb_master.CLS144,IV MECH,IV MECH,bb_master.rtccompany
+bb_master.CLS145,IV MECH - A,IV MECH - A,bb_master.rtccompany
+bb_master.CLS146,IV MECH - B,IV MECH - B,bb_master.rtccompany
+bb_master.CLS147,VII CIVIL,VII CIVIL,bb_master.rtccompany
+bb_master.CLS148,VII ECE,VII ECE,bb_master.rtccompany

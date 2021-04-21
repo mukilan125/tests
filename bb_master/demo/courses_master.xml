@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="BCS1" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Computer Science</field>
+            <field name="code">BCS</field>           
+        </record>
+        <record id="BCS2" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Computer Science specialization with Cloud Computing and Information Security</field>
+            <field name="code">BCS</field>           
+        </record>
+        <record id="BIT1" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Information Technology</field>
+            <field name="code">BIT</field>           
+        </record>
+        <record id="BIT2" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Information Technology with Data Science</field>
+            <field name="code">BIT</field>           
+        </record>
+        <record id="BCT1" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Computer Technology</field>
+            <field name="code">BCT</field>           
+        </record>
+        <record id="BCT2" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Computer Technology specialization with IBM course</field>
+            <field name="code">BCT</field>           
+        </record>
+        <!-- change id here -->
+        <record id="bcomputerapps" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">12</field>  
+            <field name="name">B.C.A</field>
+            <field name="code">BCA</field>           
+        </record>
+        <record id="BMA" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Mathematics</field>
+            <field name="code">BMA</field>           
+        </record>
+        <record id="BPH" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Physics</field>
+            <field name="code">BPH</field>           
+        </record>
+        <record id="BVC" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Visual Communication</field>
+            <field name="code">BVC</field>           
+        </record>
+        <record id="BCD" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Costume Design and Fashion Technology</field>
+            <field name="code">BCD</field>           
+        </record>
+        <record id="BPY" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Psychology</field>
+            <field name="code">BPY</field>           
+        </record>
+        <record id="BBT" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Bio Technology</field>
+            <field name="code">BBT</field>           
+        </record>
+        <record id="BMB" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Micro Biology</field>
+            <field name="code">BMB</field>           
+        </record>
+        <record id="BCM1" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com</field>
+            <field name="code">BCM</field>           
+        </record>
+        <record id="BCM2" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com specialization with ACCA</field>
+            <field name="code">BCM</field>           
+        </record>
+        <record id="BCC" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com Computer Application</field>
+            <field name="code">BCC</field>           
+        </record>
+        <record id="BPA" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com Professional Accounting</field>
+            <field name="code">BPA</field>           
+        </record>
+        <record id="BPS" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com BPS</field>
+            <field name="code">BPS</field>           
+        </record>
+        <record id="BEC" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com E-Commerce</field>
+            <field name="code">BEC</field>           
+        </record>
+        <record id="BAF" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com Accounting and Finance</field>
+            <field name="code">BAF</field>           
+        </record>
+        <record id="BFS" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com Financial Services</field>
+            <field name="code">BFS</field>           
+        </record>
+        <record id="BBI" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com Banking and Insurance</field>
+            <field name="code">BBI</field>           
+        </record>
+        <record id="BTI" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com Information Technology</field>
+            <field name="code">BTI</field>           
+        </record>
+        <record id="BCP" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">8</field>
+            <field name="name">B.Com Corporate Secretaryship</field>
+            <field name="code">BCP</field>           
+        </record>
+        <record id="businessadmincomp" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">10</field>
+            <field name="name">B.B.A Computer Application</field>
+            <field name="code">BBA</field>           
+        </record>
+        <record id="BEN" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">4</field>
+            <field name="name">B.A English Literature</field>
+            <field name="code">BEN</field>           
+        </record>
+
+        <record id="MDB" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">7</field>
+            <field name="name">M.Sc Data Science and Business Analytics</field>
+            <field name="code">MDB</field>           
+        </record>
+        <record id="MCS" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">7</field>
+            <field name="name">M.Sc Computer Science</field>
+            <field name="code">MCS</field>           
+        </record>
+        <record id="MIT" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">7</field>
+            <field name="name">M.Sc Information Technology</field>
+            <field name="code">MIT</field>           
+        </record>
+        <record id="MMA" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">7</field>
+            <field name="name">M.Sc Mathematics</field>
+            <field name="code">MMA</field>           
+        </record>
+        <record id="MPY" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">7</field>
+            <field name="name">M.Sc Applied Psychology</field>
+            <field name="code">MPY</field>           
+        </record>
+        <record id="MCM" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">9</field>
+            <field name="name">M.Com</field>
+            <field name="code">MCM</field>           
+        </record>
+        <record id="MCC" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">9</field>
+            <field name="name">M.Com Computer Application</field>
+            <field name="code">MCC</field>           
+        </record>
+        <record id="MJC" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">5</field>
+            <field name="name">MJMC</field>
+            <field name="code">MJC</field>           
+        </record>
+        <record id="MEN" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">5</field>
+            <field name="name">M.A English Literature</field>
+            <field name="code">MEN</field>           
+        </record>
+
+        <record id="masterbusiness" model="academic.course">
+            <field name="institution_id">4</field>
+            <field name="course_type_id">11</field>
+            <field name="name">MBA</field>
+            <field name="code">MBA</field>           
+        </record>
+
+        <record id="BMECH" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">1</field>
+            <field name="name">B.E MECH</field>
+            <field name="code">BME</field>           
+        </record>
+        <record id="BECE" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">1</field>
+            <field name="name">B.E ECE</field>
+            <field name="code">BEC</field>           
+        </record>
+        <record id="BCIVIL" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">1</field>
+            <field name="name">B.E CIVIL</field>
+            <field name="code">BCE</field>           
+        </record>
+        <record id="BTECHIT" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">3</field>
+            <field name="name">B.TECH IT</field>
+            <field name="code">BIT</field>           
+        </record>
+        <record id="BECSE" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">1</field>
+            <field name="name">B.E CSE</field>
+            <field name="code">BCS</field>           
+        </record>
+
+        <record id="MEAE" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">2</field>
+            <field name="name">M.E Applied Electronics</field>
+            <field name="code">MAE</field>           
+        </record>
+        <record id="MEBC" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">2</field>
+            <field name="name">M.E Bio Metric and Cyber Security</field>
+            <field name="code">MBC</field>           
+        </record>
+
+        <record id="BARCH" model="academic.course">
+            <field name="institution_id">6</field>
+            <field name="course_type_id">18</field>
+            <field name="name">B.ARCH</field>
+            <field name="code">B.ARCH</field>           
+        </record>
+
+        <record id="BBE" model="academic.course">
+            <field name="institution_id">5</field>
+            <field name="course_type_id">1</field>
+            <field name="name">B.E Biomedical Engineering</field>
+            <field name="code">BBE</field>           
+        </record>
+
+        <record id="BFN" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">6</field>
+            <field name="name">B.Sc Food and Nutrition</field>
+            <field name="code">BFN</field>           
+        </record>
+
+        <record id="BAV" model="academic.course">
+            <field name="institution_id">3</field>
+            <field name="course_type_id">10</field>
+            <field name="name">BBA Aviation</field>
+            <field name="code">BAV</field>           
+        </record>      
+                
+    </data>
+</odoo>
